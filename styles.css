@@ -371,6 +371,38 @@ p{ margin:0 0 1em; color:var(--ink-soft); max-width:62ch; }
   flex-wrap:wrap; gap:10px;
 }
 
+/* ---------- curriculum resource cards ---------- */
+.subject-block{ margin-top:56px; }
+.subject-block:first-child{ margin-top:0; }
+.subject-block-head{
+  display:flex; align-items:baseline; gap:12px; margin-bottom:20px;
+}
+.subject-count{
+  font-family:var(--f-mono); font-size:12px; color:var(--ink-soft);
+}
+.resource-grid{
+  display:grid; grid-template-columns:repeat(2,1fr); gap:16px;
+}
+.resource-card{
+  background:#fff; border:1px solid var(--grid-line);
+  border-radius:8px; padding:18px 20px;
+  display:flex; align-items:flex-start; gap:14px;
+  text-decoration:none;
+  transition:border-color .15s, transform .15s, box-shadow .15s;
+}
+.resource-card:hover{
+  border-color:var(--navy); transform:translateY(-2px);
+  box-shadow:3px 3px 0 var(--gold);
+}
+.resource-icon{
+  font-family:var(--f-mono); font-size:10.5px; letter-spacing:.04em;
+  color:var(--navy); background:var(--paper-dim);
+  border:1px solid var(--grid-line); border-radius:4px;
+  padding:6px 8px; flex-shrink:0;
+}
+.resource-card h3{ font-size:.98rem; margin-bottom:3px; color:var(--navy); }
+.resource-card p{ font-size:.85rem; margin:0; color:var(--ink-soft); max-width:none; }
+
 /* ---------- page header (non-home pages) ---------- */
 .page-hero{
   padding:56px 0 44px;
@@ -390,6 +422,7 @@ p{ margin:0 0 1em; color:var(--ink-soft); max-width:62ch; }
   .footer-grid{ grid-template-columns:1fr 1fr; }
   .nav-links{ display:none; }
   .cta-banner{ flex-direction:column; align-items:flex-start; }
+  .resource-grid{ grid-template-columns:1fr; }
 }
 
 @media (prefers-reduced-motion: reduce){
