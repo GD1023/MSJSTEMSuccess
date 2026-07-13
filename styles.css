@@ -108,11 +108,12 @@ p{ margin:0 0 1em; color:var(--ink-soft); max-width:62ch; }
 }
 .nav{
   display:flex; align-items:center; justify-content:space-between;
-  padding:16px 32px;
+  gap:24px;
+  padding:20px 32px;
   max-width:1120px; margin:0 auto;
 }
 .brand{
-  display:flex; align-items:center; gap:10px;
+  display:flex; align-items:center; gap:12px;
   font-family:var(--f-display); font-weight:600; font-size:1.15rem;
   color:var(--navy); text-decoration:none;
 }
@@ -124,7 +125,7 @@ p{ margin:0 0 1em; color:var(--ink-soft); max-width:62ch; }
   flex-shrink:0;
 }
 .nav-links{
-  display:flex; align-items:center; gap:28px;
+  display:flex; align-items:center; gap:32px;
   list-style:none; margin:0; padding:0;
 }
 .nav-links a{
@@ -138,7 +139,7 @@ p{ margin:0 0 1em; color:var(--ink-soft); max-width:62ch; }
   color:var(--navy); border-color:var(--gold);
 }
 .nav-cta{
-  display:flex; gap:10px; align-items:center;
+  display:flex; gap:14px; align-items:center;
 }
 .btn{
   font-family:var(--f-mono);
