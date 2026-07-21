@@ -95,6 +95,7 @@ h2{ font-size:clamp(1.7rem,3vw,2.5rem); font-weight:600; line-height:1.12; }
 h3{ font-size:1.25rem; font-weight:600; }
 p{ margin:0 0 1em; color:var(--ink-soft); max-width:62ch; }
 .lede{ font-size:1.15rem; color:var(--ink-soft); }
+.text-wide{ max-width:none; }
 
 .section{ padding:72px 0; border-bottom:1px solid var(--grid-line); }
 .section-tight{ padding:48px 0; }
