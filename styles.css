@@ -234,10 +234,38 @@ p{ margin:0 0 1em; color:var(--ink-soft); max-width:62ch; }
   color:var(--ink-soft); text-transform:uppercase;
 }
 
-/* ---------- subject tag cloud ---------- */
-.subject-cloud{
-  display:flex; flex-wrap:wrap; gap:10px; margin-top:20px;
+/* ---------- subject columns ---------- */
+.subject-columns{
+  display:flex; flex-wrap:wrap; gap:36px; align-items:flex-start;
+  margin-top:24px;
 }
+.subject-column{ min-width:150px; }
+.subject-column-label{
+  font-family:var(--f-mono); font-size:12px; font-weight:600;
+  letter-spacing:.08em; text-transform:uppercase;
+  color:var(--navy); margin-bottom:12px;
+  padding-bottom:8px; border-bottom:2px solid var(--navy);
+}
+.subject-column-science .subject-column-label{
+  color:var(--green); border-color:var(--green);
+}
+.subject-column-cs .subject-column-label{
+  color:var(--gold-deep); border-color:var(--gold-deep);
+}
+.subject-list{
+  list-style:none; margin:0; padding:0;
+  display:flex; flex-direction:column; gap:8px;
+}
+.subject-list li{
+  font-size:.92rem; color:var(--ink-soft);
+  padding-left:15px; position:relative;
+}
+.subject-list li::before{
+  content:"•"; position:absolute; left:0;
+  color:var(--navy);
+}
+.subject-column-science .subject-list li::before{ color:var(--green); }
+.subject-column-cs .subject-list li::before{ color:var(--gold-deep); }
 
 /* ---------- cards / grid ---------- */
 .grid-3{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
